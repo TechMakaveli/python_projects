@@ -1,7 +1,7 @@
 import math
 
 #header
-print('==================\nArea Calculator 📐\n==================')
+print('==================\nArea Calculator 📐\n==================') 
 
 #space
 print('')
@@ -23,7 +23,10 @@ if shape == 1:
     height = float(input('Height: '))
     base = float(input('Base: '))
     area = (height * base) / 2
-    print(f'The area is {area}')
+    if area.is_integer():
+        print('The area is', int(area))
+    else:
+        print(f'The area is {area}')
 #Rectangle
 elif shape == 2:
     lenght = float(input('Length: '))
@@ -43,7 +46,5 @@ elif shape == 4:
     print(f'The area is {area}')
 else:
     print('Bye Bye!')
-
-
 
 
