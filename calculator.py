@@ -20,29 +20,30 @@ while shape != 1 and shape != 2 and shape != 3 and shape != 4 and shape != 5:
     shape = int(input('Please select one of the shapes above: '))
 #Triangle
 if shape == 1:
-    height = int(input('Height: '))
-    base = int(input('Base: '))
-    area = (height * base) // 2
+    height = float(input('Height: '))
+    base = float(input('Base: '))
+    area = (height * base) / 2
     print(f'The area is {area}')
 #Rectangle
 elif shape == 2:
-    lenght = int(input('Length: '))
-    width = int(input('Width: '))
+    lenght = float(input('Length: '))
+    width = float(input('Width: '))
     area = lenght * width
     print(f'The area is {area}')
 #Square
 elif shape == 3:
-    side = int(input('Side: '))
+    side = float(input('Side: '))
     area = side * side
     print(f'The area is {area}')
 #Circle
 elif shape == 4:
-    radius = int(input('Radius: '))
+    radius = float(input('Radius: '))
     area = math.pi * radius ** 2
     #area = 3.14 * radius ** 2
     print(f'The area is {area}')
 else:
     print('Bye Bye!')
+
 
 
 
