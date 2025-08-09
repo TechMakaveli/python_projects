@@ -32,18 +32,27 @@ elif shape == 2:
     lenght = float(input('Length: '))
     width = float(input('Width: '))
     area = lenght * width
-    print(f'The area is {area}')
+    if area.is_integer():
+        print('The area is', int(area))
+    else:
+        print(f'The area is {area}')
 #Square
 elif shape == 3:
     side = float(input('Side: '))
     area = side * side
-    print(f'The area is {area}')
+    if area.is_integer():
+        print('The area is', int(area))
+    else:
+        print(f'The area is {area}')
 #Circle
 elif shape == 4:
     radius = float(input('Radius: '))
     area = math.pi * radius ** 2
     #area = 3.14 * radius ** 2
-    print(f'The area is {area}')
+    if area.is_integer():
+        print('The area is', int(area))
+    else:
+        print(f'The area is {area}')
 else:
     print('Bye Bye!')
 
