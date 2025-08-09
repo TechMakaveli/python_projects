@@ -1,7 +1,10 @@
 import math
 
-print('==================\nArea Calculator 📐\n==================') #header
-print('') #space
+#header
+print('==================\nArea Calculator 📐\n==================')
+
+#space
+print('')
 
 #shape gui
 print('1) Triangle')
@@ -40,5 +43,6 @@ elif shape == 4:
     print(f'The area is {area}')
 else:
     print('Bye Bye!')
+
 
 
